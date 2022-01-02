@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+  </head>
+
+  <body>
+
+    <div class="main">
+      <div class="final" style="display: none;">
+        <h3>You answered all of the questions!</h3>
+        <p>Score: </p><p class="score"></p>
+        <h4>Want to try it again?</h4>
+        <button id="again" class="submit">again</button>
+        </div>
+    
+    
+        <div id="quiz" class="quiz" style="display:none;">
+          <div class="count">
+            <p class="current"></p>
+          
+            <p style="margin-left:30px"> / </p>
+            <p class="total"></p>
+          </div>
+          <h3 id="questions"></h3>
+    
+          <label id="a1" class="container"></label>
+          
+          <label id="a2" class="container"></label>
+          
+          
+          <label id="a3" class="container"></label>
+          
+          
+          <label id="a4" class="container"></label>
+          
+          
+    
+          <button id="next" class="submit">Next</button>
+        </div>
+    
+        <div id="settings" class="settings">
+          <h3 style="text-align: center;">Set up your Quiz!</h3>
+          <label for="categorey">categorey</label>
+          <select name="" id="categorey">
+            <option value="9">General knowledge</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="25">Arts</option>
+            <option value="24">Politics</option>
+          </select>
+          <div class="mt30">
+              <label for="difficulty">Difficulty
+                
+              </label>
+              <label class="container" style="display: inline; margin-left: 30px;" for="easy">
+                Easy <input type="radio" name="radio" id="easy">
+                <span class="checkmark" style="margin-top: 2px;"></span>
+              </label>
+
+              <label class="container" style="display: inline; margin-left: 30px;" for="medium">
+                Medium<input type="radio" name="radio" id="medium">
+                <span class="checkmark" style="margin-top: 2px;"></span>
+            </label>
+            
+            <label class="container" style="display: inline; margin-left: 30px;" for="hard">
+              Hard <input type="radio" name="radio" id="hard">
+              <span class="checkmark" style="margin-top: 2px;"></span>
+            </label>
+            
+          </div>
+    
+          <div class="mt30">
+    
+    <label for="nQuestions">Number of questions</label>
+    <input type="number" id="nQuestions"  >
+    
+          </div>
+          <button id="startBtn" class="submit">Start Quiz</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+  </body>
+</html>
